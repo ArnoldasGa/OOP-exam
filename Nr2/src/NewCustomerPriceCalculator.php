@@ -4,7 +4,7 @@ namespace App\Nr2;
 class NewCustomerPriceCalculator implements TotalCalculatorInterface
 {
     private int $totalPrice = 0;
-    public function calculatePrice(array $tickets)
+    public function calculatePrice(array $tickets) : float
     {
         $i = 0;
         foreach ($tickets as $ticket) 

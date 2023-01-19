@@ -17,7 +17,7 @@ class CinemaTicket
         $this->price = $price;
     }
 
-    public function getPrice() 
+    public function getPrice() : float
     {
         return $this->price;
     }
