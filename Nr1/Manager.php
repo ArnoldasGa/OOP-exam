@@ -11,7 +11,7 @@ class Manager extends Employee
         parent::__construct($name, $salary);
     }
 
-    public function calculateSalary()
+    public function calculateSalary() : float
     {
         return $this->salary + ($this->salary / 40 *  $this->owertimeHours) * 2;
     }

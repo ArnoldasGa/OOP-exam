@@ -15,37 +15,37 @@ class Employee
         $this->id = rand();
     }
 
-    public function getExperience()
+    public function getExperience() : int
     {
         return $this->experience;
     }
 
-    public function setExperience($experience)
+    public function setExperience($experience) : void
     {
         $this->experience = $experience;
     }
 
-    public function getId()
+    public function getId() : int
     {
         return $this->id;
     }
 
-    public function calculateSalary()
+    public function calculateSalary() : float
     {
         return $this->salary;
     }
 
-    public function __toString()
+    public function __toString() : string
     {
         return "Darbuotojas " .  $this->id . ": " . $this->name . " - " . $this->salary . "EUR";
     }
 
-    public function __clone()
+    public function __clone() : void
     {
         $this->id = 0;
     }
 
-    public static function getTypeDescription()
+    public static function getTypeDescription() : string
     {
         return "Darbuotojo tipas " . static::EMPLOYEE_TYPE;
     }
